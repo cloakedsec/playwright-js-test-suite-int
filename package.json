@@ -1,0 +1,32 @@
+{
+  "name": "playwright-js-test-suite-int",
+  "version": "1.0.0",
+  "description": "Welcome to **Web Health Inspector**, a developer-focused site auditing tool built using **Playwright + TypeScript**. This tool tests the health of any publicly accessible website by scanning for:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "test": "playwright test",
+    "test:debug": "playwright test --debug",
+    "test:debug:ui": "playwright test --debug --ui",
+    "test:report": "playwright show-report",
+    "test:report:html": "playwright show-report --reporter html",
+    "test:report:json": "playwright show-report --reporter json",
+    "test:report:json:html": "playwright show-report --reporter json,html",
+    "test:report:json:html:allure": "playwright show-report --reporter json,html,allure",
+    "test:report:json:html:allure:json": "playwright show-report --reporter json,html,allure,json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.52.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
